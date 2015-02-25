@@ -1,8 +1,9 @@
 # deploy.rb
 
 set   :application,   "Formation"
+set   :user, "ubuntu"
 set   :deploy_to,     "/var/www/formation.com"
-set   :domain,        "formation"
+set   :domain,        "ubuntu@62.4.23.203"
 
 set   :scm,           :git
 set   :repository,    "git@github.com:kempsd/Formation.git"
