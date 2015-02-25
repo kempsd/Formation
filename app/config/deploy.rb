@@ -6,7 +6,9 @@ set   :deploy_to,     "/var/www/formation.com"
 set   :domain,        "ubuntu@62.4.23.203"
 
 set   :scm,           :git
-set   :repository,    "git@github.com:kempsd/Formation.git"
+# set   :repository,    "git@github.com:kempsd/Formation.git"
+set   :repository,    "file:///var/www/formation"
+set   :deploy_via,    :copy
 
 role  :web,           domain
 role  :app,           domain, :primary => true
